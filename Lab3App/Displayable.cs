@@ -6,17 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab3App
 {
-	public class Displayable
+	public interface Displayable
 	{
-		public Displayable()
-		{
-		}
-
-		void Display()
-		{
-
-		}
-		
+		void Display();
 
 		
 	}

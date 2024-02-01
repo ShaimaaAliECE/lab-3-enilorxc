@@ -8,21 +8,16 @@ namespace Lab3App
 {
 	public abstract class Tool:Collectable
 	{
-		public Tool()
-		{
-		}
+		protected Tool(string description) : base(description) { }
 
-		public void DoAction()
-		{
+        public abstract void DoAction();
 
-		}
-
-        public override void AddMe(List<Collectable> collection)
+        public override void AddMe(List<Collectable> list)
         {
-
+            base.AddMe(list);
+            DoAction();
         }
-
-
     }
+
 }
 

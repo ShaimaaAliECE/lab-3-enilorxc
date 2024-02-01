@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab3App
 {
-	public class CollectionBoard : Collectable
+	public class CollectionBoard
 	{
-		public CollectionBoard()
-		{
-		}
+		public int TotalScore { get; set; }
 
-		public int TotalScore;
-
-		public int TotalValue;
-	}
+		public int TotalValue { get; set; }
+        
+    }
 }
 

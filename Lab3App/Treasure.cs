@@ -17,6 +17,9 @@ namespace Lab3App
 		{
 			Score = score;
 		}
+		public virtual void UpdateTotalValue()
+		{
+		}
 
 		public virtual void UpdateTotalScore()
 		{

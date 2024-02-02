@@ -12,7 +12,7 @@ namespace Lab3App
 
         public override void Display()
         {
-            Console.WriteLine("MagicWand is displayed");
+            Console.WriteLine("MagicWand "+$"{Description} is displayed");
         }
 
         public override void DoAction()

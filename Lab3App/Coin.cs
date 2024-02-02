@@ -16,6 +16,11 @@ namespace Lab3App
             Value = value;
 
         }
+        public override void UpdateTotalValue()
+        {
+            Board.TotalValue += Value;
+            Console.WriteLine("Total Value is updated to: " + $"{Board.TotalValue}");
+        }
         public override void UpdateTotalScore()
 		{
             Board.TotalScore += Score;
@@ -31,6 +36,8 @@ namespace Lab3App
         public override void AddMe(List<Collectable> list)
         {
             base.AddMe(list);
+        
+            UpdateTotalValue();
             
         }
     }
